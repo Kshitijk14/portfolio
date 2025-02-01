@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { experiences, experienceDetails } from '../../../content/writing';
+import { experiences, experienceDetails } from '../../../content/experience';
 import fs from 'fs';
 import path from 'path';
 
-const dataFilePath = path.join(process.cwd(), 'src/data.ts');
+const dataFilePath = path.join(process.cwd(), 'src/content/experience.ts');
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'GET') {
