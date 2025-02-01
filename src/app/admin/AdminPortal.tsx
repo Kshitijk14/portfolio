@@ -3,10 +3,22 @@
 import React, { useState, useEffect } from 'react';
 
 const AdminPortal = () => {
-  const [data, setData] = useState({ experiences: [], experienceDetails: {} });
-  const [editItem, setEditItem] = useState(null);
+  interface ExperienceItem {
+    id: string;
+    title: string;
+    company: string;
+    duration: string;
+    description: string;
+  }
+
+  const [data, setData] = useState({ 
+    experiences: [] as ExperienceItem[], 
+    experienceDetails: {} as { [key: string]: { title: string; company: string; duration: string; description: string } },
+  });
+
+  const [editItem, setEditItem] = useState<ExperienceItem | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     fetch('/api/experiences')
@@ -26,14 +38,21 @@ const AdminPortal = () => {
       });
   }, []);
 
-  const handleAdd = (newItem) => {
+  interface NewItem {
+    id: string;
+    title: string;
+    company: string;
+    duration: string;
+    description: string;
+  }
+  const handleAdd = (newItem: NewItem) => {
     fetch('/api/experiences', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newItem),
     })
       .then((res) => res.json())
-      .then((newExperience) => {
+      .then((newExperience: ExperienceItem) => {
         setData((prevData) => ({
           ...prevData,
           experiences: [...prevData.experiences, newExperience],
@@ -50,7 +69,7 @@ const AdminPortal = () => {
       });
   };
 
-  const handleUpdate = (updatedItem) => {
+  const handleUpdate = (updatedItem: ExperienceItem) => {
     fetch(`/api/experiences/${updatedItem.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -77,7 +96,7 @@ const AdminPortal = () => {
       });
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = (id: string) => {
     fetch(`/api/experiences/${id}`, {
       method: 'DELETE',
     }).then(() => {
@@ -86,8 +105,8 @@ const AdminPortal = () => {
         experiences: prevData.experiences.filter((item) => item.id !== id),
         experienceDetails: Object.keys(prevData.experienceDetails)
           .filter((key) => key !== id)
-          .reduce((obj, key) => {
-            obj[key] = prevData.experienceDetails[key];
+          .reduce((obj: { [key: string]: any }, key) => {
+            obj[key] = (prevData.experienceDetails as { [key: string]: any })[key];
             return obj;
           }, {}),
       }));
@@ -118,8 +137,8 @@ const AdminPortal = () => {
             <li key={exp.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
               <div style={{ flex: 1 }}>{exp.title}</div>
               <div style={{ flex: 1 }}>{exp.company}</div>
-              <div style={{ flex: 1 }}>{data.experienceDetails[exp.id].duration}</div>
-              <div style={{ flex: 2 }}>{data.experienceDetails[exp.id].description}</div>
+              <div style={{ flex: 1 }}>{data.experienceDetails[exp.id]?.duration ?? 'N/A'}</div>
+              <div style={{ flex: 2 }}>{data.experienceDetails[exp.id]?.description ?? 'N/A'}</div>
               <div style={{ flex: 1 }}>
                 <button style={{ color: 'blue', marginRight: '10px' }} onClick={() => setEditItem(exp)}>Update</button>
                 <button style={{ color: 'blue' }} onClick={() => handleDelete(exp.id)}>Delete</button>
@@ -130,15 +149,21 @@ const AdminPortal = () => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            const form = e.target as HTMLFormElement;
+            const titleInput = form.elements.namedItem('title') as HTMLInputElement;
+            const companyInput = form.elements.namedItem('company') as HTMLInputElement;
+            const durationInput = form.elements.namedItem('duration') as HTMLInputElement;
+            const descriptionInput = form.elements.namedItem('description') as HTMLInputElement;
+            
             const newItem = {
               id: Date.now().toString(),
-              title: e.target.title.value,
-              company: e.target.company.value,
-              duration: e.target.duration.value,
-              description: e.target.description.value,
+              title: titleInput.value,
+              company: companyInput.value,
+              duration: durationInput.value,
+              description: descriptionInput.value,
             };
             handleAdd(newItem);
-            e.target.reset();
+            (e.target as HTMLFormElement).reset();
           }}
           style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '20px' }}
         >
@@ -153,12 +178,18 @@ const AdminPortal = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              const form = e.target as HTMLFormElement;
+              const titleInput = form.elements.namedItem('title') as HTMLInputElement;
+              const companyInput = form.elements.namedItem('company') as HTMLInputElement;
+              const durationInput = form.elements.namedItem('duration') as HTMLInputElement;
+              const descriptionInput = form.elements.namedItem('description') as HTMLInputElement;
+
               const updatedItem = {
                 id: editItem.id,
-                title: e.target.title.value,
-                company: e.target.company.value,
-                duration: e.target.duration.value,
-                description: e.target.description.value,
+                title: titleInput.value,
+                company: companyInput.value,
+                duration: durationInput.value,
+                description: descriptionInput.value,
               };
               handleUpdate(updatedItem);
             }}
@@ -167,8 +198,8 @@ const AdminPortal = () => {
             <h2 className="text-2xl mb-6">Update Experience</h2>
             <input name="title" placeholder="Title" defaultValue={editItem.title} required />
             <input name="company" placeholder="Company" defaultValue={editItem.company} required />
-            <input name="duration" placeholder="Duration" defaultValue={data.experienceDetails[editItem.id].duration} required />
-            <textarea name="description" placeholder="Description" defaultValue={data.experienceDetails[editItem.id].description} required />
+            <input name="duration" placeholder="Duration" defaultValue={data.experienceDetails[editItem.id]?.duration} required />
+            <textarea name="description" placeholder="Description" defaultValue={data.experienceDetails[editItem.id]?.description} required />
             <div style={{ display: 'flex', gap: '10px' }}>
               <button type="submit" style={{ color: 'blue' }}>Update</button>
               <button type="button" onClick={() => setEditItem(null)} style={{ color: 'blue' }}>Cancel</button>
