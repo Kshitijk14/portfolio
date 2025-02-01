@@ -2,8 +2,6 @@ interface ExperienceItem {
     id: string;
     title: string;
     company: string;
-    // duration: string;
-    // description: string;
 }
 
 export const experiences: ExperienceItem[] = [
