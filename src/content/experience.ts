@@ -11,7 +11,7 @@ export const experiences: ExperienceItem[] = [
     { id: '2', title: 'backend intern', company: 'creative ai solutions' },
 ];
 
-export const experienceDetails: { [key: string]: { title: string; company: string; duration: string; description: string } } = {
+export const experienceDetails: Record<string, { title: string; company: string; duration: string; description: string }> = {
     '1': {
         title: 'sde intern',
         company: 'syntheim [radian arc]',
