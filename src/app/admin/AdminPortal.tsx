@@ -1,19 +1,31 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+// import type { experienceDetails } from '../../content/experience';
 
-const AdminPortal = () => {
-  interface ExperienceItem {
-    id: string;
+interface ExperienceItem {
+  id: string;
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
+}
+
+interface ExperienceDetails {
+  [key: string]: {
     title: string;
     company: string;
     duration: string;
     description: string;
-  }
+  };
+}
 
-  const [data, setData] = useState({ 
-    experiences: [] as ExperienceItem[], 
-    experienceDetails: {} as { [key: string]: { title: string; company: string; duration: string; description: string } },
+const AdminPortal = () => {
+  const [data, setData] = useState<{ 
+    experiences: ExperienceItem[]; 
+    experienceDetails: Record<string, { title: string; company: string; duration: string; description: string }> }>({
+    experiences: [],
+    experienceDetails: {},
   });
 
   const [editItem, setEditItem] = useState<ExperienceItem | null>(null);
