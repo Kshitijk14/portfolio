@@ -13,8 +13,8 @@ const Writing = () => {
   };
 
   return (
-    <section className="mb-12">
-      <h3 className="text-2xl mb-8">writing</h3>
+    <section className="mb-10">
+      <h3 className="text-2xl mb-4">writing</h3>
       <ul className="space-y-3">
         {categories.map((category) => (
           <li key={category.id}>

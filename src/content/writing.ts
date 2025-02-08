@@ -4,9 +4,9 @@ interface Category {
 }
 
 export const categories: Category[] = [
-    { id: 'research-paper', title: 'research paper' },
-    { id: 'technical-blog', title: 'technical blog' },
-    { id: 'thoughts-and-ideas', title: 'thoughts and ideas' },
+    { id: 'research-paper', title: 'research papers' },
+    { id: 'technical-blog', title: 'technical blogs' },
+    // { id: 'thoughts-and-ideas', title: 'thoughts and ideas' },
 ];
 
 interface Post {
@@ -39,20 +39,26 @@ export const technicalBlogPosts: Post[] = [
         descriptions: '[yes correct, it doesn\'t have any neurons]......', 
         readLink: '#' 
     },
-];
-
-interface Post {
-    id: string;
-    title: string;
-    descriptions: string;
-    readLink: string;
-}
-
-export const thoughtsAndIdeas: Post[] = [
     { 
-        id: '1', 
+        id: '2', 
         title: 'the future of tech with rise of ai', 
         descriptions: '[what\'s gonna happen in 2025 to the tech market]....', 
         readLink: '#' 
     },
 ];
+
+// interface Post {
+//     id: string;
+//     title: string;
+//     descriptions: string;
+//     readLink: string;
+// }
+
+// export const thoughtsAndIdeas: Post[] = [
+//     { 
+//         id: '1', 
+//         title: 'the future of tech with rise of ai', 
+//         descriptions: '[what\'s gonna happen in 2025 to the tech market]....', 
+//         readLink: '#' 
+//     },
+// ];

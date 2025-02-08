@@ -1,7 +1,7 @@
-import ThoughtsAndIdeas from '../../../components/writing/ThoughtsAndIdeas';
+// import ThoughtsAndIdeas from '../../../components/writing/ThoughtsAndIdeas';
 
-const ThoughtsAndIdeasPage = () => {
-    return <ThoughtsAndIdeas />;
-};
+// const ThoughtsAndIdeasPage = () => {
+//     return <ThoughtsAndIdeas />;
+// };
 
-export default ThoughtsAndIdeasPage;
+// export default ThoughtsAndIdeasPage;

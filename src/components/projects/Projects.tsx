@@ -11,22 +11,22 @@ const Projects = () => {
   };
 
   return (
-    <section className="mb-12">
-      <h3 className="text-2xl mb-6">projects</h3>
+    <section className="mb-10">
+      <h3 className="text-2xl mb-4">projects</h3>
       <ul className="space-y-3">
         <li>
           <a href="#" onClick={() => navigateTo('/projects/serious-projects')} className="hover:text-gray-600">
-            • serious project
+            • serious projects
           </a>
         </li>
         <li>
           <a href="#" onClick={() => navigateTo('/projects/open-source-projects')} className="hover:text-gray-600">
-            • open source project
+            • open source contributions
           </a>
         </li>
         <li>
           <a href="#" onClick={() => navigateTo('/projects/mehh-projects')} className="hover:text-gray-600">
-            • mehh project
+            • mehh projects
           </a>
         </li>
       </ul>

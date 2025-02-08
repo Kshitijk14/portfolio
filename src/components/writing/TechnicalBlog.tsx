@@ -48,7 +48,7 @@ const TechnicalBlog = () => {
             animate={{ opacity: 1 }} 
             transition={{ duration: 0.2 }}
         >
-        <h3 className="text-2xl mb-8">technical blogs</h3>
+        <h3 className="text-2xl mb-8">blogs</h3>
         <ul className="space-y-3">
             {technicalBlogPosts.map((blog) => (
                 <motion.li 
