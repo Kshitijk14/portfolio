@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from "next/link";
 import { useRouter } from 'next/navigation';
 
 const Projects = () => {
@@ -15,19 +16,19 @@ const Projects = () => {
       <h3 className="text-2xl mb-4">projects</h3>
       <ul className="space-y-3">
         <li>
-          <a href="#" onClick={() => navigateTo('/projects/serious-projects')} className="hover:text-gray-600">
+          <Link href="/projects/serious-projects" className="hover:text-gray-600">
             • serious projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" onClick={() => navigateTo('/projects/open-source-projects')} className="hover:text-gray-600">
+          <Link href="/projects/open-source-projects" className="hover:text-gray-600">
             • open source contributions
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" onClick={() => navigateTo('/projects/mehh-projects')} className="hover:text-gray-600">
+          <Link href="/projects/mehh-projects" className="hover:text-gray-600">
             • mehh projects
-          </a>
+          </Link>
         </li>
       </ul>
     </section>

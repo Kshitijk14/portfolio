@@ -23,13 +23,12 @@ const Experience = () => {
       <ul className="space-y-3">
         {experiences.map((exp) => (
           <li key={exp.id}>
-            <a
-              href="#"
+            <button
               onClick={() => setSelectedExperience(exp)}
               className="hover:text-gray-600"
             >
               • {exp.title} @ {exp.company}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

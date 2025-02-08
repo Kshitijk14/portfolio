@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 import { categories } from '../../content/writing';
 
 
@@ -18,9 +19,9 @@ const Writing = () => {
       <ul className="space-y-3">
         {categories.map((category) => (
           <li key={category.id}>
-            <a href="#" onClick={() => navigateTo(`/writing/${category.id}`)} className="hover:text-gray-600">
+            <Link href={`/writing/${category.id}`} className="hover:text-gray-600">
               • {category.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
