@@ -2,15 +2,8 @@
 
 import React from 'react';
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
 
 const Projects = () => {
-  const router = useRouter();
-
-  const navigateTo = (path: string) => {
-    router.push(path);
-  };
-
   return (
     <section className="mb-10">
       <h3 className="text-2xl mb-4">projects</h3>

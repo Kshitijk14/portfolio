@@ -46,19 +46,3 @@ export const technicalBlogPosts: Post[] = [
         readLink: '#' 
     },
 ];
-
-// interface Post {
-//     id: string;
-//     title: string;
-//     descriptions: string;
-//     readLink: string;
-// }
-
-// export const thoughtsAndIdeas: Post[] = [
-//     { 
-//         id: '1', 
-//         title: 'the future of tech with rise of ai', 
-//         descriptions: '[what\'s gonna happen in 2025 to the tech market]....', 
-//         readLink: '#' 
-//     },
-// ];
