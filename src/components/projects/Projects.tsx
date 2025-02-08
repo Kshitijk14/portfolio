@@ -16,17 +16,17 @@ const Projects = () => {
       <ul className="space-y-3">
         <li>
           <a href="#" onClick={() => navigateTo('/projects/serious-projects')} className="hover:text-gray-600">
-            • serious project
+            • serious projects
           </a>
         </li>
         <li>
           <a href="#" onClick={() => navigateTo('/projects/open-source-projects')} className="hover:text-gray-600">
-            • open source project
+            • open source contributions
           </a>
         </li>
         <li>
           <a href="#" onClick={() => navigateTo('/projects/mehh-projects')} className="hover:text-gray-600">
-            • mehh project
+            • mehh projects
           </a>
         </li>
       </ul>

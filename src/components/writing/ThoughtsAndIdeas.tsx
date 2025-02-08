@@ -48,7 +48,7 @@ const ThoughtsAndIdeas = () => {
             animate={{ opacity: 1 }} 
             transition={{ duration: 0.2 }}
         >
-        <h3 className="text-2xl mb-8">thoughts & ideas</h3>
+        <h3 className="text-2xl mb-8">something</h3>
         <ul className="space-y-3">
             {thoughtsAndIdeas.map((idea) => (
                 <motion.li 

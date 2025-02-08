@@ -21,7 +21,7 @@ const MehhProjects = () => {
             transition={{ duration: 0.2 }}
             className="mb-16"
         >
-        <h3 className="text-2xl mb-8">my mid projects</h3>
+        <h3 className="text-2xl mb-8">my projects</h3>
         <ul className="space-y-3">
             {mehhProjects.map((project) => (
             <motion.li 
