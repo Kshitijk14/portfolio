@@ -15,37 +15,80 @@ export const seriousProjects: sProject[] = [
             'early cloudburst prediction system', 
             'integrated hardware for real-time data: ESP32 with DHT11 & beta rain sensor',
             'data pre-processing: datetime transformations, cyclic/seasonal features, sliding window', 
-            'prediction pipeline: LSTM, GRU, and CNN',
-            'model evaluation: MSE, MAE, RMSE, FALSE NEGATIVE RATE',
+            'prediction pipeline: LSTM, GRU, CNN-1D, & TFT (Temporal Fusion Transformer)',
+            'model evaluation: MSE, MAE, RMSE, FALSE NEGATIVE RATE, and F1-score',
             'model re-training: DVC',
             'model deployment: Flask, Docker',
         ],
         skills: [
-            'Python', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'TensorFlow', 'Keras', 'Firebase',
+            'Python', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'Keras', 'HuggingFace Transformers', 'LangChain', 'Firebase',
         ],
         viewLink: 'https://github.com/Kshitijk14/cloud-burst', 
         githubLink: 'https://github.com/Kshitijk14/model-cloud-burst' 
     },
     { 
         id: '2', 
-        title: 'coccidiosis detection in chickens', 
+        title: 'rag for enterprise support systems (research project)', 
         descriptions: [
-            'disease detection using chicken\'s fecal images', 
-            'data pre-processing: img augmentation, normalization, & resizing using `ImageDataGenerator`',
-            'base model(transfer learning): VGG16',
-            'config. mgmt.: yaml, logging',
-            'model training: CNN', 
-            'model evaluation: accuracy, precision, recall, F1-score',
-            'model re-training: DVC',
-            'model deployment: Flask, Docker, CI/CD, GitHub Actions',
+            'low-latency, high-accuracy RAG system for enterprise query resolution',
+            'semantic search: SBERT embeddings + FAISS dense retrieval',
+            'contextual response generation: BART/T5 with document re-ranking',
+            'processed 10K+ real estate/legal docs & 2K+ queries using spaCy & Tesseract OCR',
+            'outperformed GPT-3.5, BART-only, and BM25 baselines on F1, ROUGE-L, BLEU, and Faithfulness',
+            'reduced response latency by 28% (~620 ms/query)',
+            'pipeline orchestration & deployment: LangChain, FastAPI, DVC, Docker',
         ],
         skills: [
-            'Python', 'Numpy', 'Pandas', 'Scipy', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'TensorFlow', 'Keras', 
+            'Python', 'Pandas', 'spaCy', 'Tesseract OCR', 'PyTorch', 'HuggingFace Transformers', 'Sentence Transformers', 'FAISS', 'LangChain', 'FastAPI', 'Docker', 'DVC'
         ],
         viewLink: '#', 
-        githubLink: 'https://github.com/Kshitijk14/coccidiosis-disease-classification' 
+        githubLink: 'https://github.com/Kshitijk14/rag_for_query_resolution' 
     },
 ];
+
+
+interface mProject {
+    id: string;
+    title: string;
+    descriptions: string;
+    skills: string[];
+    viewLink: string;
+    githubLink: string;
+}
+
+export const mehhProjects: mProject[] = [
+    {
+        id: '1',
+        title: 'coccidiosis detection in chickens',
+        descriptions: 'Built a CNN model using VGG16 (transfer learning) to detect coccidiosis from chicken fecal images. Pre-processed data with augmentation and normalization, managed configs via YAML & logging, and deployed with Flask, Docker, and CI/CD using GitHub Actions.',
+        skills: [
+            'Python', 'TensorFlow', 'Keras', 'Scikit-learn', 'ImageDataGenerator', 'DVC', 'Flask', 'Docker', 'GitHub Actions'
+        ],
+        viewLink: '#',
+        githubLink: 'https://github.com/Kshitijk14/coccidiosis-disease-classification'
+    },
+    { 
+        id: '2', 
+        title: 'updated portfolio (2025)', 
+        descriptions: 'Used T3-Stack, to use the versatile serverless capabilities of Next.js along with freedom of mono-repo. Now, implementing an Admin Portal for updating data directly in the database.',
+        skills: [
+            'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Monorepo-TurboRepo', 'Vercel',
+        ],
+        viewLink: 'https://kshitijj.netlify.app/',
+        githubLink: 'https://github.com/Kshitijk14/portfolio' 
+    },
+    { 
+        id: '3', 
+        title: 'my old portfolio (2024)', 
+        descriptions: 'not importing all of that here again...., old projects are mentioned there.',
+        skills: [
+            'React.js', 'Chakra UI', 'Markdown It', 'Framer Motion'
+        ],
+        viewLink: 'https://kshitij-chaturvedi.netlify.app/',
+        githubLink: 'https://github.com/Kshitijk14/portfolio2024' 
+    },
+];
+
 
 interface osProject {
     id: string;
@@ -85,37 +128,5 @@ export const openSourceProjects: osProject[] = [
         ],
         viewLink: '#', 
         githubLink: '#' 
-    },
-];
-
-interface mProject {
-    id: string;
-    title: string;
-    descriptions: string;
-    skills: string[];
-    viewLink: string;
-    githubLink: string;
-}
-
-export const mehhProjects: mProject[] = [
-    { 
-        id: '1', 
-        title: 'updated portfolio (2025)', 
-        descriptions: 'Used T3-Stack, to use the versatile serverless capabilities of Next.js along with freedom of mono-repo. Now, implementing an Admin Portal for updating data directly in the database.',
-        skills: [
-            'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Monorepo-TurboRepo', 'Vercel',
-        ],
-        viewLink: 'https://kshitijj.netlify.app/',
-        githubLink: 'https://github.com/Kshitijk14/portfolio' 
-    },
-    { 
-        id: '2', 
-        title: 'my old portfolio (2024)', 
-        descriptions: 'not importing all of that here again...., old projects are mentioned there.',
-        skills: [
-            'React.js', 'Chakra UI', 'Markdown It', 'Framer Motion'
-        ],
-        viewLink: 'https://kshitij-chaturvedi.netlify.app/',
-        githubLink: 'https://github.com/Kshitijk14/portfolio2024' 
     },
 ];
