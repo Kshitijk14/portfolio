@@ -60,20 +60,6 @@ interface osProject {
 export const openSourceProjects: osProject[] = [
     { 
         id: '1', 
-        title: 'product 3d', 
-        organization: 'GSSOC-23',
-        descriptions: [
-            'contributed in adding new features.', 
-            'primarily focused on UI/UX enhancements.', 
-        ], 
-        skills: [
-            'React', 'Tailwind CSS'
-        ],
-        viewLink: '#', 
-        githubLink: '#' 
-    },
-    { 
-        id: '2', 
         title: 'ai hawk', 
         organization: '??',
         descriptions: [
@@ -84,6 +70,20 @@ export const openSourceProjects: osProject[] = [
             'Python', 'Tensorflow', 'Selenium', 'Open-Ai', 'Langchain'
         ],
         viewLink: 'https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk', 
+        githubLink: '#' 
+    },
+    { 
+        id: '2', 
+        title: 'product 3d', 
+        organization: 'GSSOC-23',
+        descriptions: [
+            'contributed in adding new features.', 
+            'primarily focused on UI/UX enhancements.', 
+        ], 
+        skills: [
+            'React', 'Tailwind CSS'
+        ],
+        viewLink: '#', 
         githubLink: '#' 
     },
 ];
@@ -100,8 +100,18 @@ interface mProject {
 export const mehhProjects: mProject[] = [
     { 
         id: '1', 
+        title: 'updated portfolio (2025)', 
+        descriptions: 'Used T3-Stack, to use the versatile serverless capabilities of Next.js along with freedom of mono-repo. Now, implementing an Admin Portal for updating data directly in the database.',
+        skills: [
+            'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Monorepo-TurboRepo', 'Vercel',
+        ],
+        viewLink: 'https://kshitijj.netlify.app/',
+        githubLink: 'https://github.com/Kshitijk14/portfolio' 
+    },
+    { 
+        id: '2', 
         title: 'my old portfolio (2024)', 
-        descriptions: 'not importing all of that here again....',
+        descriptions: 'not importing all of that here again...., old projects are mentioned there.',
         skills: [
             'React.js', 'Chakra UI', 'Markdown It', 'Framer Motion'
         ],

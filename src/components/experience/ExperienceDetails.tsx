@@ -21,7 +21,7 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({ experience, onBac
             onClick={(e) => e.stopPropagation()}
         >
             <main className="mt-2">
-            <h1 className="text-2xl mb-6">experience details</h1>
+            <h1 className="text-2xl mb-6">experience details:</h1>
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl">{experience.title} @ {experience.company}</h2>
                 <span className="text-md text-gray-500">{experience.duration}</span>

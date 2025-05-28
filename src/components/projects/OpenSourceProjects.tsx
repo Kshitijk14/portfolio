@@ -21,7 +21,7 @@ const OpenSourceProjects = () => {
             transition={{ duration: 0.2 }}
             className="mb-16"
         >
-        <h3 className="text-2xl mb-8">my open-source contributions</h3>
+        <h3 className="text-2xl mb-8">my contributions</h3>
         <ul className="space-y-3">
             {openSourceProjects.map((project) => (
             <motion.li 
