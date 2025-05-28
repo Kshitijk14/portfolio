@@ -14,13 +14,13 @@ const Projects = () => {
           </Link>
         </li>
         <li>
-          <Link href="/projects/open-source-projects" className="hover:text-gray-600">
-            • open source contributions
+          <Link href="/projects/mehh-projects" className="hover:text-gray-600">
+            • mehh projects
           </Link>
         </li>
         <li>
-          <Link href="/projects/mehh-projects" className="hover:text-gray-600">
-            • mehh projects
+          <Link href="/projects/open-source-projects" className="hover:text-gray-600">
+            • open source contributions
           </Link>
         </li>
       </ul>

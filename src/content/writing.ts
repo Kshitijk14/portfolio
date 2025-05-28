@@ -19,7 +19,13 @@ interface Post {
 export const researchPapers: Post[] = [
     { 
         id: '1', 
-        title: 'early cloudburst prediction system using time series forecasting', 
+        title: 'how signal decomposition helps in early cloudburst predetermination', 
+        descriptions: '[working on it]....', 
+        readLink: '#' 
+    },
+    { 
+        id: '2', 
+        title: 'domain specific rag for enterprise query resolution with limited resources', 
         descriptions: '[working on it]....', 
         readLink: '#' 
     },
