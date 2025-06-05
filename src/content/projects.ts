@@ -12,7 +12,9 @@ export const seriousProjects: sProject[] = [
         id: '1', 
         title: 'cloudy (research project)', 
         descriptions: [
-            'early cloudburst prediction system', 
+            'early cloudburst predetermination system ',
+            'signal decomposition: transforming the original signal using EEMD (Empirical Mode Decomposition) into multiple IMFs (Intrinsic Mode Functions)',
+            'feature extraction: by identifying different frequency components from each IMFs using FCR (Fine to coarse reconstruction)',
             'integrated hardware for real-time data: ESP32 with DHT11 & beta rain sensor',
             'data pre-processing: datetime transformations, cyclic/seasonal features, sliding window', 
             'prediction pipeline: LSTM, GRU, CNN-1D, & TFT (Temporal Fusion Transformer)',
@@ -28,15 +30,16 @@ export const seriousProjects: sProject[] = [
     },
     { 
         id: '2', 
-        title: 'rag for enterprise support systems (research project)', 
+        title: 'adaptive rag for enterprise support systems (research project)', 
         descriptions: [
             'low-latency, high-accuracy RAG system for enterprise query resolution',
-            'semantic search: SBERT embeddings + FAISS dense retrieval',
-            'contextual response generation: BART/T5 with document re-ranking',
-            'processed 10K+ real estate/legal docs & 2K+ queries using spaCy & Tesseract OCR',
+            'semantic search: SBERT embeddings + FAISS dense retrieval + ChromaDB vector store',
+            'contextual response generation: BART/T5 with document re-ranking, & retrieval + hallucination grading',
+            'processed 1K+ agricultural/sustainable energy related docs & 200+ queries using spaCy & Tesseract OCR',
             'outperformed GPT-3.5, BART-only, and BM25 baselines on F1, ROUGE-L, BLEU, and Faithfulness',
             'reduced response latency by 28% (~620 ms/query)',
             'pipeline orchestration & deployment: LangChain, FastAPI, DVC, Docker',
+            'NOT YET DEPLOYED......',
         ],
         skills: [
             'Python', 'Pandas', 'spaCy', 'Tesseract OCR', 'PyTorch', 'HuggingFace Transformers', 'Sentence Transformers', 'FAISS', 'LangChain', 'FastAPI', 'Docker', 'DVC'
