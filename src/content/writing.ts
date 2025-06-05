@@ -19,13 +19,13 @@ interface Post {
 export const researchPapers: Post[] = [
     { 
         id: '1', 
-        title: 'how signal decomposition helps in early cloudburst predetermination', 
+        title: 'how signal decomposition affects early cloudburst predeterminations', 
         descriptions: '[working on it]....', 
         readLink: '#' 
     },
     { 
         id: '2', 
-        title: 'domain specific rag for enterprise query resolution with limited resources', 
+        title: 'adaptive rag for enterprise support systems with limited resources', 
         descriptions: '[working on it]....', 
         readLink: '#' 
     },
