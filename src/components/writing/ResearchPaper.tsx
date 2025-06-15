@@ -49,7 +49,7 @@ const ResearchPaper = () => {
             transition={{ duration: 0.2 }}
         >
         <h3 className="text-2xl mb-8">research papers</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm sm:text-base md:text-lg text-left">
             {researchPapers.map((paper) => (
                 <motion.li 
                     key={paper.id}
@@ -59,7 +59,7 @@ const ResearchPaper = () => {
                 >
                     <div className="flex justify-between items-center mb-4">
                         <h4 className="text-xl">{paper.title}</h4>
-                        <a href={paper.readLink} target="_blank" className="text-blue-500 hover:text-gray-600">read</a>
+                        <a href={paper.readLink} target="_blank" className="text-blue-500 hover:text-gray-600 text-sm sm:text-base">read</a>
                     </div>
                     <p className="truncate-description">
                         {truncateDescription(paper.descriptions, maxLength)}
@@ -68,7 +68,7 @@ const ResearchPaper = () => {
                 </motion.li>
             ))}
         </ul>
-        <button onClick={navigateToHome} className="text-blue-500 hover:text-gray-600 mt-6">go back</button>
+        <button onClick={navigateToHome} className="text-blue-500 hover:text-gray-600 mt-6 text-sm sm:text-base">go back</button>
         </motion.section>
     );
 };

@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section className="mb-10">
       <h3 className="text-2xl mb-4">projects</h3>
-      <ul className="space-y-3">
+      <ul className="space-y-3 text-sm sm:text-base md:text-lg text-left">
         <li>
           <Link href="/projects/serious-projects" className="hover:text-gray-600">
             • serious projects

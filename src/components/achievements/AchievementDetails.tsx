@@ -19,17 +19,17 @@ const AchievementDetails: React.FC<AchievementDetailsProps> = ({ achievement, on
       onClick={onBack}
     >
       <div
-        className="bg-white bg-opacity-70 backdrop-blur-md p-8 rounded-lg shadow-lg max-w-4xl mx-auto font-mono"
+        className="bg-white bg-opacity-70 backdrop-blur-md p-8 rounded-lg shadow-lg max-w-4xl mx-auto font-mono text-sm sm:text-base md:text-lg"
         onClick={(e) => e.stopPropagation()}
       >
-        <main className="mt-2">
+        <main className="mt-2 text-left">
           <h1 className="text-2xl mb-6">achievement details:</h1>
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl">{achievement.title}</h2>
+            <h2 className="text-xl sm:text-2xl">{achievement.title}</h2>
             <span className="text-md text-gray-500">{achievement.date}</span>
           </div>
           <p className="text-md">{achievement.description}</p>
-          <button onClick={onBack} className="mt-4 text-blue-500 hover:text-gray-600">
+          <button onClick={onBack} className="mt-4 text-blue-500 hover:text-gray-600 text-sm sm:text-base">
             go back
           </button>
         </main>
