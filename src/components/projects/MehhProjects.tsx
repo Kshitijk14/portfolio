@@ -22,7 +22,7 @@ const MehhProjects = () => {
             className="mb-16"
         >
         <h3 className="text-2xl mb-8">my projects</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm sm:text-base md:text-lg text-left">
             {mehhProjects.map((project) => (
             <motion.li 
                 key={project.id}
@@ -37,12 +37,12 @@ const MehhProjects = () => {
                         <a href={project.githubLink} target="_blank" className="text-blue-500 hover:text-gray-600">github</a>
                     </div>
                 </div>
-                <ul className="list-inside">
+                <ul className="list-inside text-justify text-sm sm:text-base md:text-lg pl-2 pr-4 space-y-2">
                     {project.descriptions.length > 0 && (
                         <p>{project.descriptions}</p>
                     )}
                 </ul>
-                <p className='mt-2 mb-2'><strong>tech used:</strong> {project.skills.join(', ')}</p>
+                <p className='mt-4 mb-2 text-sm sm:text-base md:text-lg'><strong>tech used:</strong> {project.skills.join(', ')}</p>
                 {/* <div className='mb-2'></div> */}
             </motion.li>
             ))}

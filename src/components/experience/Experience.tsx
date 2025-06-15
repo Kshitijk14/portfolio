@@ -20,7 +20,7 @@ const Experience = () => {
   return (
     <section className="relative mb-10">
       <h3 className="text-2xl mb-4">experience</h3>
-      <ul className="space-y-3">
+      <ul className="space-y-3 text-sm sm:text-base md:text-lg">
         {experiences.map((exp) => (
           <li key={exp.id}>
             <button
@@ -34,7 +34,7 @@ const Experience = () => {
       </ul>
       {selectedExperience && (
         <ExperienceDetails
-          experience={experienceDetails[selectedExperience.id] as { title: string; company: string; duration: string; description: string }}
+          experience={experienceDetails[selectedExperience.id] as { title: string; company: string; duration: string; descriptions: string[], skills: string[] }}
           onBack={handleBack}
         />
       )}

@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <div className="min-h-screen bg-white text-gray-800 px-4 md:px-6 py-8 max-w-4xl mx-auto font-mono">
+        <div className="min-h-screen bg-white text-gray-800 text-sm px-6 md:px-10 py-4 max-w-4xl mx-auto font-mono">
           <Header />
           <main className="flex-grow">{children}</main>
         </div>

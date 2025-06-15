@@ -12,7 +12,7 @@ export const seriousProjects: sProject[] = [
         id: '1', 
         title: 'cloudy (research project)', 
         descriptions: [
-            'early cloudburst predetermination system ',
+            'early cloudburst predetermination system',
             'signal decomposition: transforming the original signal using EEMD (Empirical Mode Decomposition) into multiple IMFs (Intrinsic Mode Functions)',
             'feature extraction: by identifying different frequency components from each IMFs using FCR (Fine to coarse reconstruction)',
             'integrated hardware for real-time data: ESP32 with DHT11 & beta rain sensor',
