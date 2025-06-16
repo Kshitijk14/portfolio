@@ -17,7 +17,7 @@ const Achievements: React.FC = () => {
     };
 
     return (
-        <section className="relative mb-10">
+        <section className="relative mb-8">
             <h3 className="text-2xl mb-4">achievements</h3>
             <ul className="space-y-3 text-sm sm:text-base md:text-lg text-left">
                 {achievementsData.map((achievement) => (

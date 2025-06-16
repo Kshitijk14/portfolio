@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section className="mb-10">
+    <section className="mb-8">
       <h3 className="text-2xl mb-4">projects</h3>
       <ul className="space-y-3 text-sm sm:text-base md:text-lg text-left">
         <li>

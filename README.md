@@ -1,9 +1,9 @@
 # Create T3 App
 
 ---
-**Production Branch:** ```prod-before-admin```
+**Production Branch:** ```main```
 
-**Don't** *make changes to that branch* 
+**Don't** *make changes to that branch directly* 
 
 ---
 
