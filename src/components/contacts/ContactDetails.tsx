@@ -44,7 +44,7 @@ const ContactDetails: React.FC<ContactDetailsProps> = ({ onBack }) => (
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {placeholder || link}
+                            {placeholder ?? link}
                         </a>
                     </li>
                 ))}
