@@ -20,7 +20,7 @@ export const seriousProjects: sProject[] = [
             'prediction pipeline: LSTM, GRU, CNN-1D, & TFT (Temporal Fusion Transformer)',
             'model evaluation: MSE, MAE, RMSE, FALSE NEGATIVE RATE, and F1-score',
             'model re-training: DVC',
-            'model deployment: Flask, Docker',
+            'NOT YET DEPLOYED......',
         ],
         skills: [
             'Python', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'Keras', 'HuggingFace Transformers', 'LangChain', 'Firebase',
@@ -33,16 +33,16 @@ export const seriousProjects: sProject[] = [
         title: 'adaptive rag for enterprise support systems (research project)', 
         descriptions: [
             'low-latency, high-accuracy RAG system for enterprise query resolution',
-            'semantic search: SBERT embeddings + FAISS dense retrieval + ChromaDB vector store',
-            'contextual response generation: BART/T5 with document re-ranking, & retrieval + hallucination grading',
-            'processed 1K+ agricultural/sustainable energy related docs & 200+ queries using spaCy & Tesseract OCR',
-            'outperformed GPT-3.5, BART-only, and BM25 baselines on F1, ROUGE-L, BLEU, and Faithfulness',
+            'semantic search: SBERT embeddings + FAISS dense retrieval + ChromaDB & FAISS vector store',
+            'contextual response generation: Llama3.2 2B with document re-ranking, & retrieval + hallucination grading',
+            'processed 1K+ agricultural/sustainable energy related docs & 100+ queries using spaCy & Tesseract OCR',
+            'outperformed baselines (like GPT-3.5, BART-only, TF-IDF, and BM25) on F1, ROUGE-L, BLEU, and Faithfulness',
             'reduced response latency by 28% (~620 ms/query)',
-            'pipeline orchestration & deployment: LangChain, FastAPI, DVC, Docker',
+            'pipeline orchestration & re-training: LangChain, FastAPI, DVC',
             'NOT YET DEPLOYED......',
         ],
         skills: [
-            'Python', 'Pandas', 'spaCy', 'Tesseract OCR', 'PyTorch', 'HuggingFace Transformers', 'Sentence Transformers', 'FAISS', 'LangChain', 'FastAPI', 'Docker', 'DVC'
+            'Python', 'Pandas', 'spaCy', 'Tesseract OCR', 'PyTorch', 'HuggingFace Transformers', 'Sentence Transformers', 'ChromaDB', 'FAISS', 'LangChain', 'FastAPI', 'Docker', 'DVC'
         ],
         viewLink: '#', 
         githubLink: 'https://github.com/Kshitijk14/rag_for_query_resolution' 
