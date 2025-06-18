@@ -39,7 +39,7 @@ const MehhProjects = () => {
                 </div>
                 <ul className="list-inside text-justify text-sm sm:text-base md:text-lg pl-2 pr-4 space-y-2">
                     {project.descriptions.length > 0 && (
-                        <p>{project.descriptions}</p>
+                        <p className='text-sm'>{project.descriptions}</p>
                     )}
                 </ul>
                 <p className='mt-4 mb-2 text-sm sm:text-base md:text-lg'><strong>tech used:</strong> {project.skills.join(', ')}</p>
