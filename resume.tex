@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
-    left=1.5 cm, % seperation between body and page edge from the left
-    right=1.5 cm, % seperation between body and page edge from the right
+    top=0.8 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
+    left=1.2 cm, % seperation between body and page edge from the left
+    right=1.2 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -130,7 +130,7 @@
 } % new environment for three column entries
 
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.2}
 }{
     \par\kern\topsep
 } % new environment for the header
@@ -258,7 +258,7 @@
             \begin{highlights}
                 \item Built predictive models with Python and SQL to improve forecasting and cut query time by 30 minutes daily.
                 \item Deployed an Adaptive-RAG system with re-ranking, hallucination grading to automate query resolution and boost team efficiency by 60\%+.
-                \item \textbf{Used:} NumPy, Pandas, SciPy, Scikit-Learn, Statsmodels, Matplotlib, Seaborn, SBERT, FAISS, Llama3.2 2B, Tavily, Beautiful Soup, Selenium, Hugging Face, Transformers, PyTorch, LangChain, LangGraph, DVC, FastAPI.
+                \item \textbf{Used:} NumPy, Pandas, SciPy, Scikit-Learn, Statsmodels, Matplotlib, Seaborn, SBERT, FAISS, Llama3.2 2B, Tavily, BeautifulSoup4, Selenium, Hugging Face Transformers, PyTorch, LangChain ecosystem (LangChain, LangGraph, Ollama), DVC, FastAPI.
             \end{highlights}
         \end{onecolentry}
 
@@ -290,7 +290,7 @@
             \begin{highlights}
                 \item Built multilingual AI health assistant, reducing computation by 35\% through model distillation and batching.
                 \item Led an 8-member team to deploy and optimize the system, reducing per-query costs by 40\% with caching.
-                \item \textbf{Used:} Python, SBERT, ChromaDB, Hugging Face, LangChain, PyTorch, OpenAI, SpaCy, Flask, React Native, Docker.
+                \item \textbf{Used:} Python, SBERT, ChromaDB, Hugging Face Transformers, LangChain, PyTorch, OpenAI, SpaCy, Flask, React Native, Docker.
             \end{highlights}
         \end{onecolentry}
 
@@ -321,7 +321,7 @@
     \section{PROJECTS}
 
         \begin{twocolentry}{
-            \href{https://github.com/Kshitijk14/rag_for_query_resolution}{Link}
+            \href{https://github.com/Kshitijk14/rag_for_query_resolution}{GitHub Repository}
         }
             \textbf{Adaptive RAG for Enterprise Support Systems} [Research Paper]\end{twocolentry}
 
@@ -330,7 +330,7 @@
             \begin{highlights}
                 \item Built a high-accuracy RAG pipeline, outperforming baselines with 28\% lower latency.
                 \item Processed 1K+ agri-docs and 100+ queries using spaCy and OCR.
-                \item \textbf{Used:} Python, PyTorch, SBERT, FAISS, CHromaDB, TF-IDF, BM25, DPR, BART/T5 (Llama3.2, Qwen3), spaCy, Tesseract OCR, LangChain, LangGraph, Hugging Face Transformers, FastAPI, DVC, Docker.
+                \item \textbf{Used:} Python, PyTorch, SBERT, FAISS, ChromaDB, TF-IDF, BM25, DPR, BART/T5 (Llama3.2, Qwen3), spaCy, Tesseract OCR, LangChain ecosystem (LangChain, LangGraph, Ollama), Hugging Face Transformers, FastAPI, DVC, Docker.
             \end{highlights}
         \end{onecolentry}
 
@@ -338,9 +338,9 @@
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
-            \href{https://github.com/Kshitijk14/model-cloud-burst}{Link}
+            \href{https://github.com/Kshitijk14/model-cloud-burst}{GitHub Repository}
         }
-            \textbf{Cloudburst prediction system using signal decompositon} [Research Paper]\end{twocolentry}
+            \textbf{Cloudburst Prediction using Signal Decomposition} [Research Paper]\end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
@@ -368,7 +368,7 @@
         \vspace{0.1 cm}
 
         \begin{onecolentry}
-            \textbf{Libraries:} NumPy, Pandas, Matplotlib, Seaborn, Scipy, Statsmodels, Scikit-Learn, TensorFlow, PyTorch, Transformers, LangChain, OpenCV, Flask, FastAPI, Selenium, BS4, Requests, PyTest
+            \textbf{Libraries:} NumPy, Pandas, Matplotlib, Seaborn, Scipy, Statsmodels, Scikit-Learn, TensorFlow, PyTorch, Hugging Face Transformers, LangChain, OpenCV, Flask, FastAPI, Selenium, BeautifulSoup4, Requests, PyTest
         \end{onecolentry}
 
         \vspace{0.1 cm}
@@ -386,8 +386,18 @@
                 \item \textbf{Judged} BVP Hex Hackathon (Nov '24); \textbf{Mentored} 5+ hackathons across Delhi.
                 \item \textbf{Qualified SIH 2023 \& 2024} under ML and Climate tracks.
                 \item \textbf{Top 10} in HackMait’22 (MAIT) \& EmpowHer Hack (IEEE-IIITD); \textbf{Top 30} in Vihan 2.0 (IEEE-DTU’23).
-                \item \textbf{Machine Learning Specialization} (Supervised, Advanced, Unsupervised ML) by DeepLearning.AI (Andrew Ng) and IBM Certified \textbf{Artificial Intelligence Analyst}.
                 \item Held leadership roles as \textbf{Management Head} at ECELL-ADGITM and \textbf{Instrumental Head \& Treasurer} at Swaranjali-ADGITM.
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    \section{CERTIFICATIONS}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Machine Learning Specialization I - III} (Supervised, Advanced, Unsupervised) by \textbf{DeepLearning.AI (Andrew Ng)}
+                \item \textbf{IBM} Certified \textbf{Artificial Intelligence Analyst}
             \end{highlights}
         \end{onecolentry}
 
