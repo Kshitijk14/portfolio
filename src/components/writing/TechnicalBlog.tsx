@@ -53,22 +53,22 @@ const TechnicalBlog = () => {
             {technicalBlogPosts.map((blog) => (
                 <motion.li 
                     key={blog.id}
-                    className="bg-white bg-opacity-70 p-4 rounded-lg shadow-md transition-all duration-10"
-                    whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
+                    className="bg-white/70 dark:bg-zinc-800/70 hover:bg-gray-100/70 dark:hover:bg-zinc-700/70 text-gray-900 dark:text-gray-200 dark:hover:text-gray-100 bg-opacity-70 p-4 rounded-lg shadow-md transition-all duration-10"
+                    whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.15 }}
                 >
                     <div className="flex justify-between items-center mb-4">
-                        <h4 className="text-xl">{blog.title}</h4>
-                        <a href={blog.readLink} target="_blank" className="text-blue-500 hover:text-gray-600 text-sm sm:text-base">read</a>
+                        <h4 className="text-gray-800 dark:text-gray-200 text-xl">{blog.title}</h4>
+                        <a href={blog.readLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 text-sm sm:text-base">read</a>
                     </div>
-                    <p className="truncate-description">
+                    <p className="text-gray-700 dark:text-gray-300 truncate-description">
                         {truncateDescription(blog.descriptions, maxLength)}
                     </p>
                     <div className='mb-2'></div>
                 </motion.li>
             ))}
         </ul>
-        <button onClick={navigateToHome} className="text-blue-500 hover:text-gray-600 mt-6 text-sm sm:text-base">go back</button>
+        <button onClick={navigateToHome} className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mt-6 text-sm sm:text-base">go back</button>
         </motion.section>
     );
 };

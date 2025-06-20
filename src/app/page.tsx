@@ -4,21 +4,24 @@ import Experience from '../components/experience/Experience';
 import Projects from '../components/projects/Projects';
 import Writing from '../components/writing/Writing';
 import Achievements from '../components/achievements/Achievements';
-import SafeHydrate from '../components/SafeHydrate';
 import Footer from "../components/Footer";
+// import NoSSR from '../components/themes/NoSSR';
+// import SafeHydrate from '../components/SafeHydrate';
 
 const Home: React.FC = () => {
   return (
+    // <NoSSR fallback={<div className="min-h-screen bg-white">Loading...</div>}>
     <>
-      <SafeHydrate >
+      {/* <SafeHydrate > */}
         <Hero />
         <Experience />
         <Projects />
         <Writing />
         <Achievements />
         <Footer />
-      </SafeHydrate >
+      {/* </SafeHydrate > */}
     </>
+    // </NoSSR>
   );
 };
 
