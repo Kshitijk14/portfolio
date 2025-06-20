@@ -15,29 +15,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
-      <head>
-        {/* Add this script to prevent FOUC (Flash of Unstyled Content) */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
-                } else {
-                  document.documentElement.classList.remove('dark')
-                }
-              } catch (_) {}
-            `,
-          }}
-        />
-      </head>
-      <body className="bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 transition-colors">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${GeistSans.variable} bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100`}>
         <ThemeProvider 
           attribute="class" 
           defaultTheme="system" 
-          enableSystem
-          disableTransitionOnChange
+          enableSystem={true}
         >
           <div className="min-h-screen text-sm px-4 md:px-10 py-2 max-w-4xl mx-auto font-mono">
             <Header />

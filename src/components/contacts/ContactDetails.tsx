@@ -25,14 +25,14 @@ const ContactDetails: React.FC<ContactDetailsProps> = ({ onBack }) => (
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
         transition={{ duration: 0.2 }}
-        className="fixed top-0 right-0 h-full w-[320px] sm:w-[400px] max-w-sm bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-lg z-50 border-gray-200"
+        className="fixed top-0 right-0 h-full w-[320px] sm:w-[400px] max-w-sm bg-white/90 dark:bg-zinc-900/95 backdrop-blur-md shadow-lg z-50 border-gray-200"
         onClick={e => e.stopPropagation()}
     >
         <div
         className="p-6 font-mono flex flex-col justify-between items-start"
         onClick={e => e.stopPropagation()}
         >
-            <h2 className="text-gray-800 dark:text-gray-200 text-xl mb-4">contact info. <span className="text-md">→</span></h2>
+            <h2 className="text-gray-800 dark:text-gray-200 text-xl mb-6">contact info. <span className="text-md">→</span></h2>
             <ul className="mb-2 list-none text-gray-600 dark:text-gray-300 p-0">
                 {Object.entries(contactDetails).map(([key, { id, link, placeholder }]) => (
                     <li key={key} className="text mb-2 ml-1 flex items-center">

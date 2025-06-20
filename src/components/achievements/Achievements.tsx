@@ -18,12 +18,12 @@ const Achievements: React.FC = () => {
 
     return (
         <section className="relative mb-8">
-            <h3 className="text-gray-900 dark:text-gray-100 text-2xl mb-4">achievements</h3>
-            <ul className="text-gray-800 dark:text-gray-200 space-y-3 text-sm sm:text-base md:text-lg text-left">
+            <h2 className="text-gray-900 dark:text-gray-100 text-xl sm:text-2xl md:text-3xl mb-4">achievements</h2>
+            <ul className="px-0 sm:px-2 md:px-4 text-gray-800 dark:text-gray-200 space-y-3 text-sm sm:text-base md:text-md text-left">
                 {achievementsData.map((achievement) => (
                 <li key={achievement.id}>
                     <button onClick={() => setSelectedAchievement(achievement)} className="hover:text-gray-600 dark:hover:text-gray-400">
-                    • {achievement.title}
+                    • <u>{achievement.title}</u>
                     </button>
                 </li>
                 ))}

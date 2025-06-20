@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <header className="flex justify-between items-center py-2 mb-6 sticky top-0 z-50 bg-white/90 dark:bg-zinc-900/90">
+    <header className="flex justify-between items-center py-2 mb-16 sticky top-0 z-50 bg-white dark:bg-zinc-900">
       <Link href="/" className="text-2xl font-bold hover:text-gray-500 dark:hover:text-gray-400 text-gray-900 dark:text-gray-200">KSHITIJ</Link>
 
       {/* Desktop nav */}
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-50 p-6 flex flex-col bg-white/90 dark:bg-gray-900/90 backdrop-blur-2xl shadow-lg"
+              className="fixed inset-0 z-50 p-6 flex flex-col bg-white/90 dark:bg-zinc-900/90 backdrop-blur-2xl shadow-xl"
             >
               <div className="flex justify-between items-center mb-8">
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-200">menu</h2>
