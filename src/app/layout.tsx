@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import "../styles/globals.css";
 import Header from "../components/Header";
+import { ThemeProvider } from "../components/themes/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Kshitij",
@@ -14,12 +15,35 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
-        <div className="min-h-screen bg-white text-gray-800 text-sm px-6 md:px-10 py-4 max-w-4xl mx-auto font-mono">
-          <Header />
-          <main className="flex-grow">{children}</main>
-        </div>
+    <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Add this script to prevent FOUC (Flash of Unstyled Content) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark')
+                } else {
+                  document.documentElement.classList.remove('dark')
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
+      <body className="bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 transition-colors">
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="system" 
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="min-h-screen text-sm px-4 md:px-10 py-2 max-w-4xl mx-auto font-mono">
+            <Header />
+            <main className="flex-grow">{children}</main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

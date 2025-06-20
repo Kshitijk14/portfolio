@@ -19,13 +19,13 @@ const Experience = () => {
 
   return (
     <section className="relative mb-8">
-      <h3 className="text-2xl mb-4">experience</h3>
-      <ul className="space-y-3 text-sm sm:text-base md:text-lg">
+      <h3 className="text-gray-900 dark:text-gray-100 text-2xl mb-4">experience</h3>
+      <ul className="text-gray-800 dark:text-gray-200 space-y-3 text-sm sm:text-base md:text-lg">
         {experiences.map((exp) => (
           <li key={exp.id}>
             <button
               onClick={() => setSelectedExperience(exp)}
-              className="hover:text-gray-600"
+              className="hover:text-gray-600 dark:hover:text-gray-400"
             >
               • {exp.title} @ {exp.company}
             </button>

@@ -41,13 +41,19 @@ interface Post {
 export const technicalBlogPosts: Post[] = [
     { 
         id: '1', 
-        title: 'neural network input layer in is doesn\'t have any neurons', 
+        title: 'simplify your digital life with file organizer', 
+        descriptions: 'Ever found yourself drowning in a sea of unorganized files?......', 
+        readLink: 'https://kshitiijj.medium.com/simplify-your-digital-life-with-file-organizer-6eba5228db0e' 
+    },
+    { 
+        id: '2', 
+        title: 'neural network input layer doesn\'t have any neurons', 
         descriptions: '[yes correct, it doesn\'t have any neurons]......', 
         readLink: '#' 
     },
     { 
-        id: '2', 
-        title: 'the future of tech with rise of ai', 
+        id: '3', 
+        title: 'the future of generic tech jobs with advancement of ai', 
         descriptions: '[what\'s gonna happen in 2025 to the tech market]....', 
         readLink: '#' 
     },
