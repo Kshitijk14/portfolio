@@ -13,11 +13,11 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({ experience, onBac
             animate={{ opacity: 1, y: 0 }} 
             exit={{ opacity: 0, y: 50 }} 
             transition={{ duration: 0.15 }} 
-            className="fixed inset-0 flex items-center justify-center bg-white/30 dark:bg-zinc-900/30 backdrop-blur z-50"
+            className="fixed inset-0 flex items-center justify-center bg-white/30 dark:bg-gray-900/30 backdrop-blur z-50"
             onClick={onBack}
         >
         <div 
-            className="bg-white/70 dark:bg-zinc-900/70 backdrop-blur-md p-8 rounded-lg shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-auto font-mono"
+            className="bg-white/70 dark:bg-zinc-900/90 backdrop-blur-md p-8 rounded-lg shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-auto font-mono"
             onClick={(e) => e.stopPropagation()}
         >
             <main className="mt-2">
