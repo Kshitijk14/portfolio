@@ -7,6 +7,8 @@ import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from "framer-motion";
 import { ThemeToggle } from "./themes/ThemeToggle";
 
+const RESUME_PATH = "/Resume Main Kshitij Chaturvedi.pdf";
+
 const Header: React.FC = () => {
   const [showContact, setShowContact] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -25,7 +27,7 @@ const Header: React.FC = () => {
             CONTACT 
           </button>
           <Link
-            href="/Resume Main Kshitij Chaturvedi.pdf"
+            href={RESUME_PATH}
             className="hover:text-gray-500 dark:hover:text-gray-400 text-gray-900 dark:text-gray-200"
             target="_blank"
             rel="noopener noreferrer"
@@ -90,7 +92,7 @@ const Header: React.FC = () => {
                   contact
                 </button>
                 <Link 
-                  href="/Resume Kshitij Chaturvedi.pdf" 
+                  href={RESUME_PATH} 
                   onClick={() => setShowMobileMenu(false)} 
                   className="hover:text-gray-500 dark:hover:text-gray-400" 
                   target="_blank" rel="noopener noreferrer"

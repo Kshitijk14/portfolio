@@ -48,13 +48,7 @@ export const technicalBlogPosts: Post[] = [
     { 
         id: '2', 
         title: 'neural network input layer doesn\'t have any neurons', 
-        descriptions: '[yes correct, it doesn\'t have any neurons]......', 
-        readLink: '#' 
-    },
-    { 
-        id: '3', 
-        title: 'the future of generic tech jobs with advancement of ai', 
-        descriptions: '[what\'s gonna happen in 2025 to the tech market]....', 
+        descriptions: '[writing]......', 
         readLink: '#' 
     },
 ];
