@@ -18,11 +18,11 @@ const Projects = () => {
             • <u>mehh projects</u>
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link href="/projects/open-source-projects" className="hover:text-gray-600 dark:hover:text-gray-400">
             • <u>open source contributions</u>
           </Link>
-        </li> */}
+        </li>
       </ul>
     </section>
   );

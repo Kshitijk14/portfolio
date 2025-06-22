@@ -159,8 +159,8 @@ export const openSourceProjects: osProject[] = [
         title: 'ai hawk', 
         organization: '??',
         descriptions: [
-            'tailored auto applier for linkedin jobs.',
-            'still working........no progress yet!!', 
+            'tailored application agent for linkedin jobs.',
+            'still working on it........will update soon!!', 
         ], 
         skills: [
             'Python', 'Tensorflow', 'Selenium', 'Open-Ai', 'Langchain'
