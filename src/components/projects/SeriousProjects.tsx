@@ -33,7 +33,7 @@ const SeriousProjects = () => {
                 <div className="flex justify-between items-center mb-4">
                     <h4 className="text-xl">{project.title}</h4>
                     <div className='text-sm'>
-                        <a href={project.viewLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mr-4 transition-colors">view</a>
+                        {/* <a href={project.viewLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mr-4 transition-colors">view</a> */}
                         <a href={project.githubLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors">github</a>
                     </div>
                 </div>
