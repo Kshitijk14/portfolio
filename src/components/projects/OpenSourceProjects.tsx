@@ -36,7 +36,7 @@ const OpenSourceProjects = () => {
                         <p className="text-gray-500 ml-2">@ {project.organization}</p>
                     </div>
                     <div className='text-sm'>
-                        <a href={project.viewLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mr-4">view</a>
+                        {/* <a href={project.viewLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mr-4">view</a> */}
                         <a href={project.githubLink} target="_blank" className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400">github</a>
                     </div>
                 </div>

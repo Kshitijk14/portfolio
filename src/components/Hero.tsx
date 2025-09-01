@@ -8,8 +8,8 @@ const Hero: React.FC = () => {
         hi, i am <strong className='hover:text-gray-500 dark:hover:text-gray-400'><u>Kshitij</u>!</strong>
       </Link>
       
-      <p className="mt-6 px-0 sm:px-1 md:px-2 text-gray-800 dark:text-gray-200 text-base sm:text-md mb-1">final year electronics student.</p>
-      <p className="px-0 sm:px-1 md:px-2 text-gray-800 dark:text-gray-200 text-base sm:text-md mb-4">getting a deeper understanding of time-series modelling & transformers.</p>
+      <p className="mt-6 px-0 sm:px-1 md:px-2 text-gray-800 dark:text-gray-200 text-base sm:text-md mb-1">final year electronics student (i graduated....lowkey topped)</p>
+      <p className="px-0 sm:px-1 md:px-2 text-gray-800 dark:text-gray-200 text-base sm:text-md mb-4">studying deeply to understand <i>time-series modelling</i>, <i>transformers</i>, & <i>dpo/kto</i>.</p>
     </main>
   );
 };

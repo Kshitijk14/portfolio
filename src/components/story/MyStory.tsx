@@ -20,9 +20,9 @@ const MyStory = () => {
             transition={{ duration: 0.2 }}
             className="mb-16"
         >
-        <h1 className="text-gray-900 dark:text-gray-100 text-2xl mb-8">my story</h1>
+        <h1 className="text-gray-900 dark:text-gray-100 text-2xl mb-8">you wanna hear??</h1>
         <p className="text-gray-800 dark:text-gray-300 text-sm sm:text-base md:text-lg text-justify mb-4">
-            placeholder text for now........
+            will cook up something soon........
         </p>
         <button onClick={navigateToHome} className="text-blue-500 hover:text-gray-600 dark:hover:text-gray-400 mt-6">go back</button>
         </motion.section>

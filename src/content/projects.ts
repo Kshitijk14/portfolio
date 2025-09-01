@@ -3,7 +3,7 @@ interface sProject {
     title: string;
     descriptions: string[];
     skills: string[];
-    viewLink: string;
+    // viewLink: string;
     githubLink: string;
 }
 
@@ -20,12 +20,11 @@ export const seriousProjects: sProject[] = [
             'prediction pipeline: LSTM, GRU, CNN-1D, & TFT (Temporal Fusion Transformer)',
             'model evaluation: MSE, MAE, RMSE, FALSE NEGATIVE RATE, and F1-score',
             'model re-training: DVC',
-            'NOT YET DEPLOYED......',
         ],
         skills: [
             'Python', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'Keras', 'HuggingFace Transformers', 'LangChain', 'Firebase',
         ],
-        viewLink: 'https://github.com/Kshitijk14/cloud-burst', 
+        // viewLink: 'https://github.com/Kshitijk14/cloud-burst', 
         githubLink: 'https://github.com/Kshitijk14/model-cloud-burst' 
     },
     { 
@@ -39,12 +38,11 @@ export const seriousProjects: sProject[] = [
             'outperformed baselines (like GPT-3.5, BART-only, TF-IDF, and BM25) on F1, ROUGE-L, BLEU, and Faithfulness',
             'reduced response latency by 28% (~620 ms/query)',
             'pipeline orchestration & re-training: LangChain, FastAPI, DVC',
-            'NOT YET DEPLOYED......',
         ],
         skills: [
             'Python', 'Pandas', 'spaCy', 'Tesseract OCR', 'PyTorch', 'HuggingFace Transformers', 'Sentence Transformers', 'ChromaDB', 'FAISS', 'LangChain', 'FastAPI', 'Docker', 'DVC'
         ],
-        viewLink: '#', 
+        // viewLink: '#', 
         githubLink: 'https://github.com/Kshitijk14/rag_for_query_resolution' 
     },
 ];
@@ -149,27 +147,41 @@ interface osProject {
     organization: string;
     descriptions: string[];
     skills: string[];
-    viewLink: string;
+    // viewLink: string;
     githubLink: string;
 }
 
 export const openSourceProjects: osProject[] = [
+    {
+        id: '1',
+        title: 'paddleOCR',
+        organization: 'paddle paddle',
+        descriptions: [
+            're-writing the fine-tune script, to handle un-even data',
+            'fixing fine-tune \'0\' accuracy issue',
+        ],
+        skills: [
+            'python', 'torch', 'yolo'
+        ],
+        // viewLink: '#',
+        githubLink: 'https://github.com/Kshitijk14/PaddleOCR'
+    },
     { 
-        id: '1', 
+        id: '2', 
         title: 'ai hawk', 
         organization: '??',
         descriptions: [
             'tailored application agent for linkedin jobs.',
-            'still working on it........will update soon!!', 
+            'some keys/ auth issues.....so not continuing as of now!!', 
         ], 
         skills: [
-            'Python', 'Tensorflow', 'Selenium', 'Open-Ai', 'Langchain'
+            'python', 'tensorflow', 'selenium', 'open-ai', 'langchain'
         ],
-        viewLink: 'https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk', 
-        githubLink: '#' 
+        // viewLink: '#', 
+        githubLink: 'https://github.com/Kshitijk14/linkedIn_auto_jobs_applier_with_AI' 
     },
     { 
-        id: '2', 
+        id: '3', 
         title: 'product 3d', 
         organization: 'GSSOC-23',
         descriptions: [
@@ -177,9 +189,9 @@ export const openSourceProjects: osProject[] = [
             'primarily focused on UI/UX enhancements.', 
         ], 
         skills: [
-            'React', 'Tailwind CSS'
+            'react', 'tailwind css'
         ],
-        viewLink: '#', 
-        githubLink: '#' 
+        // viewLink: '#', 
+        githubLink: 'https://github.com/Kshitijk14/Product_3D' 
     },
 ];

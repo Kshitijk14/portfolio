@@ -5,7 +5,7 @@ interface Category {
 
 export const categories: Category[] = [
     { id: 'research-paper', title: 'research papers' },
-    { id: 'technical-blog', title: 'technical blogs' },
+    { id: 'technical-blog', title: 'blogs' },
     // { id: 'thoughts-and-ideas', title: 'thoughts and ideas' },
 ];
 
@@ -20,13 +20,13 @@ export const researchPapers: Post[] = [
     { 
         id: '1', 
         title: 'how signal decomposition affects early cloudburst predeterminations', 
-        descriptions: '[working on it]....', 
+        descriptions: '[trust me, it\'s almost ready]....', 
         readLink: '#' 
     },
     { 
         id: '2', 
-        title: 'adaptive rag for enterprise support systems with limited resources', 
-        descriptions: '[working on it]....', 
+        title: 'optimizing adaptive rag for enterprise support systems, with budgeted compute', 
+        descriptions: 'slm evals & thingies.....', 
         readLink: '#' 
     },
 ];
@@ -48,7 +48,7 @@ export const technicalBlogPosts: Post[] = [
     { 
         id: '2', 
         title: 'neural network input layer doesn\'t have any neurons', 
-        descriptions: '[writing]......', 
+        descriptions: '[writing as soon as i stop being lazy]......', 
         readLink: '#' 
     },
 ];
